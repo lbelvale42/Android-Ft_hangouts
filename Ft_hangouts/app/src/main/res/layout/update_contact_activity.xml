@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="@string/firstname"
+        android:ems="10"
+        android:id="@+id/firstnameField"
+        android:layout_alignTop="@+id/avatar"
+        android:layout_toRightOf="@+id/avatar"
+        android:singleLine="false"
+        android:capitalize="words"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:hint="@string/phone_number"
+        android:ems="10"
+        android:layout_below="@+id/avatar"
+        android:layout_alignLeft="@+id/avatar"
+        android:layout_alignStart="@+id/avatar"
+        android:layout_marginTop="18dp"
+        android:id="@+id/phoneField"
+        android:layout_alignRight="@+id/lastnameField"
+        android:layout_alignEnd="@+id/lastnameField"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:hint="@string/email_address"
+        android:ems="10"
+        android:layout_below="@+id/phoneField"
+        android:layout_alignLeft="@+id/phoneField"
+        android:layout_alignStart="@+id/phoneField"
+        android:layout_marginTop="16dp"
+        android:id="@+id/emailField"
+
+        android:layout_alignRight="@+id/phoneField"
+        android:layout_alignEnd="@+id/phoneField" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPostalAddress"
+        android:hint="@string/address"
+        android:ems="10"
+        android:id="@+id/addressField"
+        android:layout_marginTop="19dp"
+        android:layout_below="@+id/emailField"
+        android:layout_alignLeft="@+id/emailField"
+        android:layout_alignStart="@+id/emailField"
+        android:layout_alignRight="@+id/emailField"
+        android:layout_alignEnd="@+id/emailField" />
+
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:srcCompat="@android:drawable/ic_menu_add"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="15dp"
+        android:id="@+id/avatar"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="1dp"
+        android:layout_marginStart="15dp" />
+
+    <Button
+        android:text="@string/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:id="@+id/saveContact"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/addressField"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/colorAccent" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="@string/lastname"
+        android:ems="10"
+        android:id="@+id/lastnameField"
+        android:layout_below="@+id/firstnameField"
+        android:layout_toRightOf="@+id/avatar"
+        android:layout_marginTop="15dp"
+        android:layout_alignRight="@+id/firstnameField"
+        android:layout_alignEnd="@+id/firstnameField"
+        android:capitalize="words" />
+</RelativeLayout>
+   </ScrollView>
